@@ -1,4 +1,4 @@
-mkdirdir /storage
+mkdir /storage
 mkdir /storage/vol60-1gi
  chmod 0777 /storage/vol60-1gi
 mkdir /storage/vol61-1gi
