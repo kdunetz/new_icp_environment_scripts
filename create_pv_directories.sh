@@ -19,6 +19,7 @@ mkdir /storage/vol09-1gi
 chmod 0777 /storage/vol09-1gi
 mkdir /storage/vol10-1gi
 chmod 0777 /storage/vol10-1gi
+kubectl create -f pv.yaml
 mkdir /storage/vol11-5gi
 chmod 0777 /storage/vol11-5gi
 mkdir /storage/vol12-5gi
@@ -29,6 +30,7 @@ mkdir /storage/vol14-5gi
 chmod 0777 /storage/vol14-5gi
 mkdir /storage/vol15-5gi
 chmod 0777 /storage/vol15-5gi
+kubectl create -f pv.yaml
 mkdir /storage/vol16-10gi
 chmod 0777 /storage/vol16-10gi
 mkdir /storage/vol17-10gi
@@ -39,6 +41,7 @@ mkdir /storage/vol19-10gi
 chmod 0777 /storage/vol19-10gi
 mkdir /storage/vol20-10gi
 chmod 0777 /storage/vol20-10gi
+kubectl create -f pv.yaml
 mkdir /storage/vol21-20gi
 chmod 0777 /storage/vol21-20gi
 mkdir /storage/vol22-20gi
@@ -49,6 +52,7 @@ mkdir /storage/vol24-20gi
 chmod 0777 /storage/vol24-20gi
 mkdir /storage/vol25-20gi
 chmod 0777 /storage/vol25-20gi
+kubectl create -f pv.yaml
 mkdir /storage/vol26-50gi
 chmod 0777 /storage/vol26-50gi
 mkdir /storage/vol27-50gi
@@ -59,3 +63,4 @@ mkdir /storage/vol29-50gi
 chmod 0777 /storage/vol29-50gi
 mkdir /storage/vol30-50gi
 chmod 0777 /storage/vol30-50gi
+kubectl create -f pv.yaml
