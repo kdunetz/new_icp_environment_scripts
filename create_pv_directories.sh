@@ -1,4 +1,15 @@
 mkdir /storage
+mkdir /storage/kad
+mkdir /storage/kad/nodered-kad
+chmod 0777 /storage/kad/nodered-kad
+mkdir /storage/kad/jenkins
+chmod 0777 /storage/kad/jenkins
+mkdir /storage/kad/CAM_logs
+chmod 0777 /storage/kad/CAM_logs
+mkdir /storage/kad/CAM_db
+chmod 0777 /storage/kad/CAM_db
+mkdir /storage/kad/CAM_terraform
+chmod 0777 /storage/kad/CAM_terraform
 mkdir /storage/vol01-1gi
 chmod 0777 /storage/vol01-1gi
 mkdir /storage/vol02-1gi
