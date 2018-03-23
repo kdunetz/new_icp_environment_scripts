@@ -400,7 +400,7 @@ kind: PersistentVolume
    accessModes:
       - ReadWriteMany
    hostPath:
-     path: /storage/kevin/CAM_db
+     path: /storage/kad/CAM_db
 ---
 kind: PersistentVolume
  apiVersion: v1
@@ -414,7 +414,7 @@ kind: PersistentVolume
    accessModes:
       - ReadWriteMany
    hostPath:
-     path: /storage/kevin/CAM_logs
+     path: /storage/kad/CAM_logs
 ---
 kind: PersistentVolume
  apiVersion: v1
@@ -428,4 +428,4 @@ kind: PersistentVolume
    accessModes:
       - ReadWriteMany
    hostPath:
-     path: /storage/kevin/CAM_terraform
+     path: /storage/kad/CAM_terraform
