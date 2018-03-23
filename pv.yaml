@@ -389,43 +389,43 @@ spec:
     path: /storage/vol30-50gi
 ---
 kind: PersistentVolume
- apiVersion: v1
- metadata:
-   name: cam-mongo-pv
-   labels:
-     type: cam-mongo
- spec:
-   capacity:
-     storage: 15Gi
-   accessModes:
-      - ReadWriteMany
-   hostPath:
-     path: /storage/kad/CAM_db
+apiVersion: v1
+metadata:
+  name: cam-mongo-pv
+  labels:
+    type: cam-mongo
+spec:
+  capacity:
+    storage: 15Gi
+  accessModes:
+     - ReadWriteMany
+  hostPath:
+    path: /storage/kad/CAM_db
 ---
 kind: PersistentVolume
- apiVersion: v1
- metadata:
-   name: cam-logs-pv
-   labels:
-     type: cam-logs
- spec:
-   capacity:
-     storage: 10Gi
-   accessModes:
-      - ReadWriteMany
-   hostPath:
-     path: /storage/kad/CAM_logs
+apiVersion: v1
+metadata:
+  name: cam-logs-pv
+  labels:
+    type: cam-logs
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+     - ReadWriteMany
+  hostPath:
+    path: /storage/kad/CAM_logs
 ---
 kind: PersistentVolume
- apiVersion: v1
- metadata:
-   name: cam-terraform-pv
-   labels:
-     type: cam-terraform
- spec:
-   capacity:
-     storage: 15Gi
-   accessModes:
-      - ReadWriteMany
-   hostPath:
-     path: /storage/kad/CAM_terraform
+apiVersion: v1
+metadata:
+  name: cam-terraform-pv
+  labels:
+    type: cam-terraform
+spec:
+  capacity:
+    storage: 15Gi
+  accessModes:
+     - ReadWriteMany
+  hostPath:
+    path: /storage/kad/CAM_terraform
