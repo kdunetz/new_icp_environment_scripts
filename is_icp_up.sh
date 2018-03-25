@@ -10,7 +10,18 @@ fi
 while true; 
 do 
 
-curl --insecure -L https://$IP_ADDRESS:8443; 
-docker ps | wc; sleep 5; 
+CURL_RESULT=`curl --insecure -L https://$IP_ADDRESS:8443/login`
+echo $CURL_RESULT
+docker ps | wc; 
+if [[ "$CURL_RESULT" =~ "IBM Cloud Private" ]]
+then
+   echo -ne '\007'
+   echo -ne '\007'
+   echo -ne '\007'
+   echo -ne '\007'
+   echo -ne '\007'
+   exit
+fi
+sleep 5; 
 
 done
