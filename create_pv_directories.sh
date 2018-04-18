@@ -71,6 +71,6 @@ chmod 0777 /storage/vol29-50gi
 mkdir /storage/vol30-50gi
 chmod 0777 /storage/vol30-50gi
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.8.4/bin/linux/amd64/kubectl
-chmod +x ./kubectl
+chmod a+x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
-kubectl create -f pv.yaml
+/usr/local/bin/kubectl create -f pv.yaml
